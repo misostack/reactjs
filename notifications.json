@@ -1,0 +1,32 @@
+{
+  "notifications": {
+    "1": [
+      {
+        "userId": 1,
+        "notificationId": 1,
+        "content": "hello",
+        "notificationType": 1,
+        "isRead": false,
+        "isSent": false
+      },
+      {
+        "userId": 1,
+        "notificationId": 2,
+        "content": "hey",
+        "notificationType": 2,
+        "isRead": false,
+        "isSent": false
+      }
+    ],
+    "2": [
+      {
+        "userId": 2,
+        "notificationId": 3,
+        "content": "heyo",
+        "notificationType": 1,
+        "isRead": false,
+        "isSent": false
+      }
+    ]
+  }
+}
