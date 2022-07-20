@@ -2,7 +2,40 @@
 
 ## ReactJS Beginner Level
 
-1. JSX
+1. Create new app
+
+> Eject
+
+You may get this error : [Using babel-preset-react-app requires that you specify NODE_ENV or BABEL_ENV](https://github.com/facebook/create-react-app/issues/2377)
+
+```bash
+yarn eject
+```
+
+How to fix it?
+
+```bash
+yarn add @babel/preset-react -D
+# and change your babel preset
+```
+
+```json
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-react",
+        {
+          "pragma": "dom",
+          "pragmaFrag": "DomFrag",
+          "throwIfNamespace": false,
+          "runtime": "classic"
+        }
+      ]
+    ]
+  },
+```
+
+2. JSX
 
 ```jsx
 const name = "Josh Perez";
