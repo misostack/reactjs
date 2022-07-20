@@ -1,5 +1,14 @@
 # ReactJS
 
+## ReactJS Beginner Level
+
+1. JSX
+
+```jsx
+const name = "Josh Perez";
+const element = <h1>Hello, {name}</h1>;
+```
+
 ## Notification with Firebase Realtime Database
 
 - [Firebase Package](https://www.npmjs.com/package/firebase)
