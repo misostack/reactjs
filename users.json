@@ -1,0 +1,37 @@
+{
+  "users": {
+    "1": 10,
+    "2": 5,
+    "d4b719bc-a2cb-45d0-ab39-86a5401d9e9c": 0
+  },
+  "notifications": {
+    "1": [
+      {
+        "userId": 1,
+        "notificationId": 1,
+        "content": "hello",
+        "notificationType": 1,
+        "isRead": false,
+        "isSent": false
+      },
+      {
+        "userId": 1,
+        "notificationId": 2,
+        "content": "hey",
+        "notificationType": 2,
+        "isRead": false,
+        "isSent": false
+      }
+    ],
+    "2": [
+      {
+        "userId": 2,
+        "notificationId": 3,
+        "content": "heyo",
+        "notificationType": 1,
+        "isRead": false,
+        "isSent": false
+      }
+    ]
+  }
+}
