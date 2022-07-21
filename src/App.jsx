@@ -1,8 +1,8 @@
-import "./App.scss";
+import React from 'react';
+import './App.scss';
 
 function App() {
-  const title = "ReactJS from 0 to hero";
-  console.log(title);
+  const title = 'ReactJS from 0 to hero';
   return (
     <>
       <h1>{title}</h1>

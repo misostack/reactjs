@@ -35,10 +35,31 @@ yarn add @babel/preset-react -D
   },
 ```
 
+> Format your code with eslint and prettier
+
+```bash
+yarn add -D eslint prettier eslint-config-prettier
+```
+
+**Remember to choose [standard](https://github.com/standard/standard) style**
+
+> Lint, Build Precheck with husky
+
+```bash
+yarn add husky -D
+yarn husky install
+# add this line to package.json scripts
+# "prepare": "husky install"
+yarn husky add .husky/pre-commit "yarn lint && yarn build"
+
+# Sometimes, you need to by pass the pre commit to do quick fix or rebase, ...etc.
+git commit --no-verify
+```
+
 2. JSX
 
 ```jsx
-const name = "Josh Perez";
+const name = 'Josh Perez';
 const element = <h1>Hello, {name}</h1>;
 ```
 
@@ -55,8 +76,8 @@ yarn add firebase
 
 ```js
 // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { initializeApp } from 'firebase/app';
+import { getAnalytics } from 'firebase/analytics';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
