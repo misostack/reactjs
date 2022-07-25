@@ -1,5 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import { initializeApp } from "firebase/app";
+import { getMessaging } from "firebase/messaging";
 import { getDatabase } from "firebase/database";
 
 export default {
@@ -17,11 +18,13 @@ export default {
 
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
+    const messaging = getMessaging(app);
 
     // Initialize Realtime Database and get a reference to the service
     return {
       app,
       db: getDatabase(app),
+      messaging,
     };
   },
 };
